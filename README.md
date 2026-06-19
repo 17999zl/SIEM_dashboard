@@ -1,7 +1,7 @@
 # Backend SIEM system
 ## Overview
 
-Built a Spring Boot and PostgreSQL backend that ingests, stores, and queries structured security logs through REST APIs. Implemented filtering and retrieval by event type, username, IP address, and log ID using a layered Controller–Service–Repository architecture, with DTOs separating persistence models from API responses. Designed the project as a foundation for future SIEM features including anomaly detection, alerting, and real-time analysis.
+**Built a Spring Boot and PostgreSQL backend that ingests, stores, and queries structured security logs through REST APIs. Implemented filtering and retrieval by event type, username, IP address, and log ID using a layered Controller–Service–Repository architecture, with DTOs separating persistence models from API responses. Designed the project as a foundation for future SIEM features including anomaly detection, alerting, and real-time analysis.**
 ---
 
 ## Features
@@ -138,6 +138,33 @@ If the log does not exist, an error response is returned.
 Returns a simple message confirming that the controller is running.
 
 ---
+
+## Example workflow
+
+Create a log with POST /logs
+
+Retrieve all logs with GET /logs
+
+Filter logs with query params
+
+Fetch one log by ID
+
+---
+
+## Future improvements
+
+- Multi-parameter filtering.
+
+- Pagination and sorting.
+
+- Authentication and role-based access.
+
+- Alert rules and anomaly detection.
+
+- Streaming or queue-based ingestion
+
+---
+
 
 ## Technologies Used
 
