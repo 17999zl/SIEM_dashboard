@@ -1,14 +1,7 @@
-# siem-dashboard
+# Backend SIEM system
 ## Overview
 
-This project is a backend Security Information and Event Management (SIEM) system built using Spring Boot and PostgreSQL. It provides REST APIs to ingest, store, and retrieve structured security logs.
-
-The system simulates core SIEM functionality, including log ingestion, filtering, and retrieval by different attributes such as event type, username, IP address, and log ID.
-
-It follows a layered architecture (Controller → Service → Repository → Database) and uses DTOs to separate internal data models from API responses.
-
-This project serves as a foundation for building advanced security monitoring features such as anomaly detection, alert generation, and real-time log analysis.
-
+Built a Spring Boot and PostgreSQL backend that ingests, stores, and queries structured security logs through REST APIs. Implemented filtering and retrieval by event type, username, IP address, and log ID using a layered Controller–Service–Repository architecture, with DTOs separating persistence models from API responses. Designed the project as a foundation for future SIEM features including anomaly detection, alerting, and real-time analysis.
 ---
 
 ## Features
